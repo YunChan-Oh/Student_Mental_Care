@@ -1,0 +1,131 @@
+/* 공통 CSS */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #45a049;
+}
+
+main {
+  padding: 6em 2em 2em; /* Header height 만큼 상단 패딩 추가 */
+  background-color: #fff;
+  margin-top: 4em; /* Header 높이만큼 margin-top 추가 */
+}
+
+.section {
+  margin-bottom: 3em;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+form label {
+  align-self: center;
+}
+
+form input,
+form textarea,
+form button {
+  padding: 0.5em;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+footer {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+nav ul li a {
+  color: black;
+}
+
+
+@media (max-width: 768px) {
+  main {
+    padding: 4em 1em 1em; 
+    margin-top: 3em; 
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  main {
+    padding: 5em 2em 2em; 
+    margin-top: 4em; 
+  }
+}
